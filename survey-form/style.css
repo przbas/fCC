@@ -1,0 +1,26 @@
+html,
+body {
+    background-color: burlywood;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 100px;
+}
+
+.left-side {
+    text-align: right;
+    margin: 10px;
+}
+
+.right-side {
+    text-align: left;
+    margin: 10px;
+}
