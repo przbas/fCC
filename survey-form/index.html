@@ -10,15 +10,41 @@
 <body>
     <h1 id="title">Survey Form</h1>
     <form id="survey-form" class="container" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
-        <p class="middle" id="description">środek</p>
+        <p class="middle" id="description">What is the shape of our world?</p>
         <label class="left-side" id="name-label" for="name">*Name:</label>
         <input class="right-side" autofocus type="text" name="name" id="name" required placeholder="Enter your name">
         <label class="left-side" id="email-label" for="email">*Email:</label>
         <input class="right-side" autofocus type="email" name="email" id="email" required placeholder="Enter your email">
         <label class="left-side" id="number-label" for="age">*Age:</label>
         <input class="right-side" autofocus type="number" name="age" id="number" required min="16" max="125" placeholder="Age">
-        <Label class="left-side" id="dropdown-label"></Label>
-        </form>
+        <Label class="left-side" id="dropdown-label">Select your current role:</Label>
+        <select class="right-side" id="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+        <label class="left-side" id="radio-label" for="globe-rating">We live on globe:</label>
+        <div class="right-side">
+            <input type="radio" name="radio-globe-rating" value="1" checked> Definitely<br>
+            <input type="radio" name="radio-globe-rating" value="2"> No way<br>
+            <input type="radio" name="radio-globe-rating" value="3"> Not sure<br>
+        </div>
+        <label class="left-side" for="check">Do you understand the principle:</label>
+        <div class="right-side">
+            <input type="checkbox" name="check-principle" value="1"> atmospheric pressure<br>
+            <input type="checkbox" name="check-principle" value="2"> vacuum<br>
+            <input type="checkbox" name="check-principle" value="3"> pressure gradient<br>
+            <input type="checkbox" name="check-principle" value="4"> Coriolis effect<br>
+            <input type="checkbox" name="check-principle" value="5"> horizon (skyline)<br>
+            <input type="checkbox" name="check-principle" value="6"> seasons
+        </div>
+        <label class="left-side" for="comments">Any Comments or Suggestions?</label>
+        <textarea class="right-side" id="comments" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
+        <button class="middle" id="submit" type="submit">Submit</button>
+    </form>
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
